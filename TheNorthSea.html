@@ -19,9 +19,9 @@ and open the template in the editor.
             <a href="javascript:void(0)" onclick="show_menue()"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
             <nav>
                 <ul id="menue_list">
-                    <li class="vis"><a href="Home.html" class="active">Home</a></li>
-                    <li class="vis"><a href="TheNorthSea.html">North Sea</a></li>
-                    <li class="vis"><a href="SailingVessel.html">Sailing Vessel</a></li>
+                    <li class="vis"><a href="Home.html">Home</a></li>
+                    <li class="vis"><a href="TheNorthSea.html" class="active">North Sea</a></li>
+                    <li class="vis"><a href="vessel.html">Sailing Vessel</a></li>
                     <li class="vis">Sailing
                     <ul class="sub_container">
                         <li class="sub_item"><a href="OffIslands.html">Off the East Fresian Islands</a></li>
@@ -34,9 +34,13 @@ and open the template in the editor.
             </nav>      
         </header>
         <section id="sec_north">
-        <h1>A few generall informaton about the North Sea</h1>
-        <div id="gallery-container" onload="zeigen()">
-            <div class="slides">
+            <h1>A few generall informaton about the North Sea</h1>
+            <p>
+            The North Sea is part of the Atlantic Ocean located between Great Britain, Denmark, Norway
+            Germany, the Netherlands, Belgium and France.<br>
+            </p>   
+            <div id="gallery-container" onload="zeigen()">
+                <div class="slides">
                 <h3>North Sea seen by Satelite</h3>
                 <img src="images/NorthSea_NASA.jpeg" class="imggallery" alt="North Sea NASA">                             
                 <p class="txtgallery">Here you see a picture of the North Sea recorded by a 
@@ -44,8 +48,8 @@ and open the template in the editor.
                    in the South-East Denmark is visible and above Denmark there is Norway.
                    In the South East you see Germany and going to the Wast the Netherland, 
                    Belgium and France appear.</p>    
-            </div>   
-            <div class="slides">
+                </div>   
+                <div class="slides">
                 <h3>Currents in the North Sea</h3>
                 <img src="images/NorthSeaCurrent01b.jpg" class="imggallery" alt="North Sea Current">                             
                 <p class="txtgallery">The arrows in the picture show you the water current in the
@@ -54,16 +58,16 @@ and open the template in the editor.
                     The speed of that current can reach 5kts and more. And this is a lot for small
                     sailing vessel with a maximum speed of 6 to 8 kts.
                 </p>
-            </div>
-            <div class="slides">
+                </div>
+                <div class="slides">
                 <h3>Sandbanks at low tide</h3>
                 <img src="images/Sandbank_01c.jpg" class="imggallery" alt="Sandbanks">                             
                 <p class="txtgallery">You see on the picture the sandbanks very typically for the
                     coastal region of the north see. During low tide they are visible like on the
                     picture. But at high tide the are right beneate the water surface and unvisible.
                     Therefore they can be very dangerous for sailors in that area.</p>
-            </div>
-            <div class="slides">
+                </div>
+                <div class="slides">
                 <h3>The Wadden Sea</h3>
                 <img src="images/WaddenSea01.jpeg" class="imggallery" alt="Map of Wadden Sea">                             
                 <p class="txtgallery">You see a map of the so called Wadden Sea (the area inside the red lines).
@@ -71,39 +75,53 @@ and open the template in the editor.
                 special region on the North Sea Coast of the Netherlands, Germany and Denmark. During low tide
                 this area falls almost completely dry. The Wadden Sea is a National Park and UNESCO World Heritage 
                 Center.</p>
-            </div>
-            <div class="slides">
+                </div>
+                <div class="slides">
                 <h3>Walking on ground of Sea</h3>
                 <img src="images/WaddenSea02.jpeg" class="imggallery" alt="Walking in the Wadden Sea">                             
                 <p class="txtgallery">During low tide most of the Wadden Sea falls dry. During that period you can
                 walk on the ground of the Sea. With a local guide you can even walk to the island only a few miles 
                 off the coast.</p>
+                </div>
+                <img id="backward" src="images/Backward_02.png" alt="B" onclick="push(-1)">
+                <img id="forward" src="images/Forward_02.png" alt="F" onclick="push(1)">           
             </div>
-            <img id="backward" src="images/Backward.png" alt="B" onclick="push(-1)">
-            <img id="forward" src="images/Forward.png" alt="F" onclick="push(1)">           
-        </div>
-        <div id="smallpics">
+            <div id="smallpics">
             <img src="images/NorthSea_NASA.jpeg" class="smal" alt="North Sea NASA" onclick="showdirect(1)">
             <img src="images/NorthSeaCurrent01b.jpg" class="smal" alt="North Sea Current" onclick="showdirect(2)">
             <img src="images/Sandbank_01c.jpg" class="smal" alt="Sandbanks" onclick="showdirect(3)">
             <img src="images/WaddenSea01.jpeg" class="smal" alt="Map of Wadden Sea" onclick="showdirect(4)">
             <img src="images/WaddenSea02.jpeg" class="smal" alt="Walking in the Wadden Sea" onclick="showdirect(5)">
-        </div>
+            </div>
+            <div class="list_container">
+                <h4>For sailors near the coasts there are several things to be known by haert:</h4>
+            <ul>
+                <li>There exists a strong tide with differences in water depth between low and high tide
+                        up to 5 meter</li>
+                <li>A huge amount of water area falls dry during low tide. So there is no water left for 
+                        sailing</li>
+                <li>There are a lot of sandbank whre a boat can run aground especially at low tide</li>
+                <li>The strong tide current of the water can be dangerous to small boats</li>
+            </ul>
+            </div>
         </section>
-        <aside id="asi_north">
-            <h4>Links for additional Information about the North Sea</h4>
-            <a class="north_link" href="https://en.wikipedia.org/wiki/North_Sea" target="_blank">North Sea at Wikipedia</a>
-            <a class="north_link" href="https://www.waddensea-worldheritage.org/" target="_blank">The WaddenSea</a>
-            <a class="north_link" href="https://whc.unesco.org/en/list/1314" target="_blank">UNESCO World Heritage Center</a>
-            <a class="north_link" href="https://www.seenotretter.de/en/who-we-are/" target="_blank">Search and Rescue in the North Sea</a>
-            <a class="north_link" href="https://www.gov.uk/government/organisations/maritime-and-coastguard-agency" target="_blank">
+        <aside class="asi_north">
+            <div class="link_container">
+                <h4>Links for additional Information about the North Sea</h4>
+                <a class="north_link" href="https://en.wikipedia.org/wiki/North_Sea" target="_blank">North Sea at Wikipedia</a>
+                <a class="north_link" href="https://www.waddensea-worldheritage.org/" target="_blank">The WaddenSea</a>
+                <a class="north_link" href="https://whc.unesco.org/en/list/1314" target="_blank">UNESCO World Heritage Center</a>
+                <a class="north_link" href="https://www.seenotretter.de/en/who-we-are/" target="_blank">Search and Rescue in the North Sea</a>
+                <a class="north_link" href="https://www.gov.uk/government/organisations/maritime-and-coastguard-agency" target="_blank">
                 Maritime &amp Coastguard Agency</a>
-            
-            <h4>Some interssting books about the North Sea</h4>
-            <a class="north_link" href="https://www.goodreads.com/book/show/22488032-the-edge-of-the-world" target="_blank">
+            </div>
+            <div class="book_container">
+                <h4>Some interssting books about the North Sea</h4>
+                <a class="north_link" href="https://www.goodreads.com/book/show/22488032-the-edge-of-the-world" target="_blank">
                 The Edge of the World</a>
-            <a class="north_link" href="https://bookshop.org/books/die-nordsee-the-north-sea-german-english/9781507829455" target="_blank">
+                <a class="north_link" href="https://bookshop.org/books/die-nordsee-the-north-sea-german-english/9781507829455" target="_blank">
                 The North Sea by Heinrich Heine</a>
+            </div>
         </aside>
     </body>
 </html>
