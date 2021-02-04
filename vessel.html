@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Sailing Vessel</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/vessel.css">
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+       <header>
+            <a href="javascript:void(0)" onclick="show_menue()"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
+            <nav>
+                <ul id="menue_list">
+                    <li class="vis"><a href="Home.html">Home</a></li>
+                    <li class="vis"><a href="TheNorthSea.html">North Sea</a></li>
+                    <li class="vis"><a href="vessel.html" class="active">Sailing Vessel</a></li>
+                    <li class="vis">Sailing
+                    <ul class="sub_container">
+                        <li class="sub_item"><a href="OffIslands.html">Off the East Fresian Islands</a></li>
+                        <li class="sub_item"><a href="SummerSpiekeroog.html">Summer on Spiekeroog</a></li>
+                        <li class="sub_item"><a href="JoyCoast.html">Joy on the coast</a></li>
+                    </ul></li>
+                    <li class="vis"><a href="Links.html">Links</a></li>
+                </ul>
+                
+            </nav>      
+        </header>
+        <section>
+            <h1>The appropriate Boat for the Wadden Sea</h1>
+            <p>
+                When I moved next to the North Sea from the South of Germany I started immediatly learning to sail.
+                After a while I was looking for an affordable sailing vessel that was especially made for the
+                Coastal Region of the North Sea: <b>The Wadden Sea</b>.<br><br>
+                The most important is what happens during low tide when the water vanishes.
+                At some areas the water depth may be very low and often lower than 2 meters.
+                In some areas the water vanishes completely.<br>
+                The most important feature of an boat appropiate for that region is the keel. 
+                The keel type determines the draft of the boat.
+            </p>
+            <div class="col">
+                <div class="keel">
+                        <img class="keel_img" src="images/full_keel.png" alt="Full keel">
+                        <h5 class="keel_caption">Full Keel</h5>
+                </div>
+                <div class="keel">
+                        <img class="keel_img" src="images/fin_keel.png" alt="Fin keel">
+                        <h5 class="keel_caption">Fin Keel</h5>
+                </div>
+            </div>
+            <div class="col">
+                <div class="keel">
+                        <img class="keel_img" src="images/bilge_keel.png" alt="Bilge keel">
+                        <h5 class="keel_caption">Bilge Keel</h5>
+                    </figure>
+                </div>
+                <div class="keel">
+                        <img class="keel_img" src="images/daggerboard.png" alt="Daggerboard">
+                        <h5 class="keel_caption">Daggerboard</h5>
+                </div>
+            </div>
+            <p>
+                The most appropriate keel typs for the North Sea Coastal Region and the Wadden Sea
+                are the bilge keel and the daggerboard.<br>
+                Thus the vessel won't <span id="show_frame">lay aside</span> when the water vanishes during low tide.
+            </p>
+            
+            <img id="boat_aside" src="images/boat_aside.png" alt="Boat laying aside">
+            <img id="boat_aside_hide" src="images/boat_aside.png" alt="Boat laying aside">
+        </section>
+    </body>
+</html>
