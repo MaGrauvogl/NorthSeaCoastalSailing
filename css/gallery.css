@@ -110,7 +110,7 @@ and open the template in the editor.
     min-height: 70px;
     border-style: solid;
     border-color: #000000;
-    background-color: yellow;
+    background-color: rgba(253, 245, 230, 0.3);
     margin: 0 auto;
 }
 }
@@ -139,14 +139,10 @@ and open the template in the editor.
 }    
     
 #smallpics{
-    display: block;
     width: 70%;
     height: 9vh;
     min-height: 70px;
-    border-style: solid;
-    border-color: #000000;
     margin: 1% 1% 1% 12%;
-    background-color: yellow;
 }
 
 .smal{

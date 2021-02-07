@@ -30,41 +30,98 @@ and open the template in the editor.
     font-size: 1.2em;
 }
 
-.col{
-    display: block;
-}
-
 #show_frame{
     color: blue;
     font-style: italic;
 }
+
+#aside{
+    display: inline-block;
+    width: 70%;
+    max-width: 700px;
+    margin-top: 0%;
+}
+#boat_aside{
+    width: 10%;
+    vertical-align: top;
+    display: inline-block;
+    transition-property: width;
+}
+
 #boat_aside_hide{
     display: none;
     width: 80%;
     max-width: 500px;
     position: fixed;
-    bottom: 10%;
-    left: 10%;
-}
-#boat_aside{
-    width: 10%;
-    transition-property: width;
+    bottom: 50%;
 }
 
 #boat_aside:hover + #boat_aside_hide{
     display: block;
 }
 
+#ourboat{
+    display: block; /*important to center the image*/
+    width: 90%;
+    margin: 0% auto;
+}
+#ourboat_txt{
+    display: block;
+    width: 90%;
+    margin: 2% auto;
+}
+/*Styling the footer for the page "Sailing Vessel"*/
+.foot_link{
+    margin: 1% 1% 2% 2%;
+}
+
+#foot_link_one{
+    width: 20%;
+    max-width: 80px;
+}
+#foot_link_two{
+    width: 40%;
+    max-width: 150px;
+    vertical-align: 300%;
+}
+
 @media screen and (min-width: 720px){
-    .col{
+.col{
         width: 49%;
         display: inline-block;
-    }
-    .keel{
+}
+.keel{
     display: inline-block;
     width: 48%;
 }
 .keel_img{
     max-width: 300px;
 }
+}
+
+@media screen and (min-width: 1040px){
+#aside{
+    margin-left: 5%;
+}
+#ourboat{
+    display: inline-block; /*important to center the image*/
+    width: 40%;
+    max-width: 600px;
+    margin: 0 0 0 2%;
+    vertical-align: top;
+}
+#ourboat_txt{
+    display: inline-block;
+    width: 40%;
+    max-width: 600px;
+    margin: 0 0 0 2%;
+    vertical-align: top;
+}
+}
+
+@media screen and (min-width: 1400px){
+#aside{
+    margin-left: 10%;
+}    
+    
 }
