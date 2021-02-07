@@ -37,7 +37,7 @@ function showslides(n){
     if (n < 1){slideindex=inh.length;}
     for (i=0; i<inh.length; i++){
         inh[i].style.display = "none";
-        smalpic[i].style.opacity = 0.5;
+        smalpic[i].style.opacity = 0.3;
     }
     inh[slideindex-1].style.display = "block";
     smalpic[slideindex-1].style.opacity = 1;
