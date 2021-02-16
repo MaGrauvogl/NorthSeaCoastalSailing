@@ -11,7 +11,8 @@ and open the template in the editor.
 /* ----------------- Picture gallery  -------------------- */
 #gallery-container{
     width: 90%;
-    margin: 1% 1%;
+    max-width: 400px;
+    margin: 1% auto;
     background-color: rgba(253, 245, 230, 0.3);
     position: relative;
 }
@@ -61,7 +62,7 @@ and open the template in the editor.
 
 
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 576px){
     
 /* ----------------- Picture gallery  -------------------- */
     
@@ -117,7 +118,7 @@ and open the template in the editor.
 
 .smal{
     display: inline-block;
-    height: 90%;
+    height: 80%;
     width: auto;
     opacity: 0.5;
     margin: auto;
@@ -127,7 +128,7 @@ and open the template in the editor.
 
 
 
-@media screen and (min-width: 1040px){
+@media screen and (min-width: 1200px){
     
 /* ----------------- Picture gallery  -------------------- */
    

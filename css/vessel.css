@@ -85,7 +85,7 @@ and open the template in the editor.
     vertical-align: 300%;
 }
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 576px){
 .col{
         width: 49%;
         display: inline-block;

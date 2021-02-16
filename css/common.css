@@ -13,6 +13,10 @@ body{
     font-family:sans-serif, arial, times, serif;
     max-width: 1400px;
 }
+h1, h3, h4, h5{
+    text-align: center;
+    padding:  1% 0%;
+}
 
 .sec_north, .asi_north{
     display: block;
@@ -23,10 +27,6 @@ body{
     padding: 2% 1% 2% 1%;
 }
 
-h1, h4, h5{
-    text-align: center;
-    padding:  1% 0%;
-}
 .aside_head{
     text-align: left;
 }
@@ -42,12 +42,25 @@ footer{
 }
 
 /*Styling video*/
-video{
+#sailback{
     display: block;
-    width: 60%;
+    width: 20%; /*relates to the value in function videosmall in common.js*/
     max-width: 340px;
     height: auto;
     margin: 4% auto;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+/*Styling the Google Maps iframe*/
+.Maps{
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    height: 40vh;
+    min-height: 200px;
+    margin: 0 auto 2% auto;
+    border-style: none;
 }
 
 .p_footer{
@@ -145,7 +158,8 @@ a.active{
 }
 
 
-@media screen and (min-width: 720px){
+
+@media screen and (min-width: 576px){
     
 p{
     font-size: 1.0em;
@@ -164,16 +178,15 @@ p{
     margin: 0% 2%;
     vertical-align: top;
 }
-/* ----------------- Navigation Menue  -------------------- */
-#menue{
-    display: none;
-}
 /*The Links in the aside*/
 .north_link{
     display: block;
     padding: 1% 1% 1% 1%;
 }
-
+/* ----------------- Navigation Menue  -------------------- */
+#menue{
+    display: none;
+}
 #menue_list{
     display: block;
     position: relative;
@@ -193,7 +206,7 @@ p{
     background-color: rgb(25, 25, 112);
     border-radius: 20px;
     color: rgb(255, 255, 255);
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .vis:first-child{
@@ -236,11 +249,15 @@ nav a.active{
     padding: 5% 0%;
     font-size: 0.8em;
 }
-
-
+}
+/*Styling the Google Maps iframe*/
+.Maps{
+    height: 45vh;
+    min-height: 400px;
+    
 }
 
-@media screen and (min-width: 1040px){
+@media screen and (min-width: 992px){
 body{
      margin: 2%;   
 }
@@ -249,8 +266,6 @@ p{
     background-color: rgba(255, 250, 240,  0.7);
     padding: 1% 2%;
 }    
-/* ----------------- Navigation Menue  -------------------- */
-
 .sec_north{
     display: inline-block;
     width: 75%;
@@ -269,6 +284,7 @@ p{
 .aside_head{
     text-align: center;
 }
+/* ----------------- Navigation Menue  -------------------- */
 
 #menue_list{
     width: 90%;
@@ -294,14 +310,14 @@ p{
 }
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1200px){
     
 /* ----------------- Navigation Menue  -------------------- */
 body{
     margin: 2% 7%;
 }
 #menue_list{
-    font-size: 1.5em;
+    font-size: 1.2em;
     width: 85%;
 }
 .asi_north{

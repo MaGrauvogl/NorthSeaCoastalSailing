@@ -1,0 +1,37 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11.02.2021, 20:33:58
+    Author     : mgrau
+*/
+
+/*CSS to style the Joy off the Coast pages*/
+
+.figu{
+    position: relative;
+    left: 10%;
+    width: 20%;
+    transform: rotate(20deg);
+}
+
+figcaption{
+    display: none;
+}
+
+.figu:hover{
+    transform: rotate(0deg);
+    position: static;
+    display: block;
+    width: 90%;
+    max-width: 600px;
+}
+
+.figu:hover + figcaption{
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}

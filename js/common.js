@@ -65,7 +65,7 @@ function windowchange(x){
         vis = true;
     }
 }
-var x = window.matchMedia("(min-width: 720px)");
+var x = window.matchMedia("(min-width: 576px)");
 windowchange(x);
 x.addListener(windowchange);
 
@@ -82,7 +82,16 @@ function windowsmal(y){
         menu.style.transform ="rotate(0deg)";
     }
 }
-var y = window.matchMedia("(max-width: 720px)");
+var y = window.matchMedia("(max-width: 576px)");
 windowchange(y);
 y.addListener(windowsmal); 
 
+//Resize the video
+function videosize(){
+    var w = document.getElementById("sailback");
+    w.style.width ="80%";
+}
+function videosmall(){
+    var v = document.getElementById("sailback");
+    v.style.width = "20%";
+}
