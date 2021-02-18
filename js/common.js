@@ -93,5 +93,5 @@ function videosize(){
 }
 function videosmall(){
     var v = document.getElementById("sailback");
-    v.style.width = "20%";
+    v.style.width = "30%";
 }

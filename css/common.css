@@ -38,17 +38,36 @@ p{
 }
 /*Styling the footer*/
 footer{
-    margin: 3% 0% 0% 0%;
+    margin: 10% 0% 0% 0%;
+    background-color: rgba(238, 203, 173, 0.5);
+    padding: 1%;
+    font-size: 0.8em;
+}
+.p_footer{
+    display: inline-block;
+    background-color: transparent;
+    vertical-align: middle;
+    text-align: right;
+    width: 25%;
+    padding: 0%;
+    margin: 0 3%;
+}
+#wap{
+    text-align: left;
+}
+#Wappen{
+    width: 40%;
+    max-width: 100px;
 }
 
 /*Styling video*/
 #sailback{
     display: block;
-    width: 20%; /*relates to the value in function videosmall in common.js*/
+    width: 30%; /*relates to the value in function videosmall in common.js*/
     max-width: 340px;
     height: auto;
     margin: 4% auto;
-    transition-property: width;
+    transition-property: width; /*is iniciated in the commen.js*/
     transition-duration: 2s;
 }
 
@@ -61,14 +80,6 @@ footer{
     min-height: 200px;
     margin: 0 auto 2% auto;
     border-style: none;
-}
-
-.p_footer{
-    display: block;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 0;
-    margin: 0;
-   
 }
 
 /*-------------------   Navigation menue   ------------------*/
@@ -183,6 +194,12 @@ p{
     display: block;
     padding: 1% 1% 1% 1%;
 }
+/*Styling the footer*/
+footer{
+    font-size: 1em;
+    margin: 5% 0% 0% 0%;
+}
+
 /* ----------------- Navigation Menue  -------------------- */
 #menue{
     display: none;

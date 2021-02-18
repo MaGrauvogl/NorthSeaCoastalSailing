@@ -12,8 +12,9 @@ and open the template in the editor.
          <link rel="stylesheet" href="css/common.css">
          <link rel="stylesheet" href="css/joycoast.css">
          <script src="js/common.js"></script>
+         <script src="js/pic_show.js"></script>
     </head>
-    <body>
+    <body onresize="resize_img()" onload="start_img()">
         <header>
              <a href="javascript:void(0)" onclick="show_menue()"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
             <nav>
@@ -31,12 +32,30 @@ and open the template in the editor.
                 </ul>              
             </nav>  
         </header>
-        <section>
+        <section id="offisland">
             <h1>An impression about the sailing off the East Fresian Islands</h1>
             <figure>
-                <img class="figu" src="images/Marina_Hooksiel_web.jpg" alt="Marina Hooksiel">
-                <figcaption>In the Marina Hooksiel before the trip off the Islands</figcaption>
+                <img id="figu1" onclick="show_img('figu1', 0)" 
+                     src="images/Marina_Hooksiel_web.jpg" alt="Marina Hooksiel">
+                <figcaption class="cap">In the Marina Hooksiel before the trip off the Islands</figcaption>
             </figure>
+            <figure>
+                <img id="figu2" onclick="show_img('figu2', 1)" 
+                     src="images/Beach_Wangerooge_web.jpg" alt="Beach Wangerooge">
+                <figcaption class="cap">The Beaches of the Island Wangerooge</figcaption>
+            </figure>
+            <figure>
+                <img id="figu3" onclick="show_img('figu3', 2)" 
+                     src="images/Gas_Tanker_web.jpg" alt="Gas Tanker">
+                <figcaption class="cap">A gas tanker on our way</figcaption>
+            </figure>
+            <figure>
+                <img id="figu4" onclick="show_img('figu4', 3)" 
+                     src="images/Sea_Lock_Hooksiel_web.jpg" alt="Gas Tanker">
+                <figcaption class="cap">In the sea lock Hooksiel waiting to go out on the
+                North Sea</figcaption>
+            </figure>
+            <img id="close" onclick="close_im()" src="images/Close_Sign.png" alt="Close Sign"/>
         </section>
     </body>
 </html>

@@ -10,28 +10,56 @@ and open the template in the editor.
 
 /*CSS to style the Joy off the Coast pages*/
 
-.figu{
+
+#offisland{
     position: relative;
-    left: 10%;
-    width: 20%;
-    transform: rotate(20deg);
+    width: 100%;
+   
 }
 
-figcaption{
+#close{
+    position: absolute;
+    width: 4%;
+    max-width: 50px;
     display: none;
 }
 
-.figu:hover{
-    transform: rotate(0deg);
-    position: static;
-    display: block;
-    width: 90%;
-    max-width: 600px;
+#figu1{
+    position: absolute;
+    width: 20%;
+    max-width: 700px;
+    left: 10%;
+    top: 10%;
+    transform: rotate(20deg);
+}
+#figu2{
+    position: absolute;
+    width: 20%;
+    max-width: 700px;
+    left: 40%;
+    top: 10%;
+    transform: rotate(-15deg);
+}
+#figu3{
+    position: absolute;
+    width: 20%;
+    max-width: 400px;
+    left: 68%;
+    top: 10%;
+    transform: rotate(30deg);
+}
+#figu4{
+    position: absolute;
+    width: 20%;
+    max-width: 400px;
+    left: 40%;
+    top: 23%;
+    transform: rotate(10deg);
+}
+.cap{
+    display: none;
+    position: absolute;
 }
 
-.figu:hover + figcaption{
-    display: block;
-    width: 90%;
-    max-width: 600px;
-    text-align: center;
-}
+
+
