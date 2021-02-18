@@ -30,14 +30,15 @@ function show_img(fig, capt){
     //center the image
     var centr = Math.round((sec.offsetWidth-bild.offsetWidth)/2);
     bild.style.left = centr.toString()+ "px";
-    bild.style.top = "15%";
+    bild.style.top = "3%";
     //positioning of the figcaption
     var p = bild.offsetTop;
     var h = bild.height;
     cap.style.display = "block";
     cap.style.top = (p+h).toString()+"px";
     cap.style.left = centr.toString()+ "px";
-    cap.style.width = bild.style.width;
+    cap.style.width = (bild.offsetWidth).toString()+"px";
+    cap.style.zIndex = "4";
     //positioning of the close button
     aus.style.display = "block";
     var aus_breite = aus.offsetWidth;
@@ -63,14 +64,13 @@ function resize_img(){
         console.log(bild);
         var centr = Math.round((sec.offsetWidth-bild.offsetWidth)/2);
         bild.style.left = centr.toString()+ "px";
-        bild.style.top = "15%";
         //positioning of the figcaption
         var p = bild.offsetTop;
         var h = bild.height;
         cap.style.display = "block";
         cap.style.top = (p+h).toString()+"px";
         cap.style.left = centr.toString()+ "px";
-        cap.style.width = bild.style.width;
+        cap.style.width = (bild.offsetWidth).toString()+"px";
         //positioning of the close button
         aus.style.display = "block";
         var aus_breite = aus.offsetWidth;

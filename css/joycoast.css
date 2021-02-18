@@ -14,7 +14,8 @@ and open the template in the editor.
 #offisland{
     position: relative;
     width: 100%;
-   
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #close{
@@ -29,7 +30,7 @@ and open the template in the editor.
     width: 20%;
     max-width: 700px;
     left: 10%;
-    top: 10%;
+    top: 1%;
     transform: rotate(20deg);
 }
 #figu2{
@@ -37,7 +38,7 @@ and open the template in the editor.
     width: 20%;
     max-width: 700px;
     left: 40%;
-    top: 10%;
+    top: 1%;
     transform: rotate(-15deg);
 }
 #figu3{
@@ -45,7 +46,7 @@ and open the template in the editor.
     width: 20%;
     max-width: 400px;
     left: 68%;
-    top: 10%;
+    top: 1%;
     transform: rotate(30deg);
 }
 #figu4{
@@ -53,12 +54,54 @@ and open the template in the editor.
     width: 20%;
     max-width: 400px;
     left: 40%;
-    top: 23%;
+    top: 13%;
     transform: rotate(10deg);
+}
+#figu5{
+    position: absolute;
+    width: 20%;
+    max-width: 400px;
+    left: 10%;
+    top: 13%;
+    transform: rotate(-10deg);
+}
+#figu6{
+    position: absolute;
+    width: 20%;
+    max-width: 700px;
+    left: 68%;
+    top: 20%;
+    transform: rotate(-10deg);
+}
+#figu7{
+    position: absolute;
+    width: 20%;
+    max-width: 400px;
+    left: 5%;
+    top: 36%;
+    transform: rotate(10deg);
+}
+#figu8{
+    position: absolute;
+    width: 25%;
+    max-width: 600px;
+    left: 39%;
+    top: 33%;
+}
+#figu9{
+    position: absolute;
+    width: 25%;
+    max-width: 600px;
+    left: 69%;
+    top: 36%;
+    transform: rotate(20deg);
 }
 .cap{
     display: none;
     position: absolute;
+    text-align: center;
+    padding: 1% 0%;
+    background-color: rgb(30, 144, 255);
 }
 
 
