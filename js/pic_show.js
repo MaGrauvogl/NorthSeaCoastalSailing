@@ -30,7 +30,7 @@ function show_img(fig, capt){
     //center the image
     var centr = Math.round((sec.offsetWidth-bild.offsetWidth)/2);
     bild.style.left = centr.toString()+ "px";
-    bild.style.top = "-3%";
+    bild.style.top = "-1%";
     //positioning of the figcaption
     var p = bild.offsetTop;
     var h = bild.height;
@@ -66,7 +66,7 @@ function resize_img(){
         console.log(bild);
         var centr = Math.round((sec.offsetWidth-bild.offsetWidth)/2);
         bild.style.left = centr.toString()+ "px";
-        bild.style.top = "-3%";
+        bild.style.top = "-1%";
         //positioning of the figcaption
         var p = bild.offsetTop;
         var h = bild.height;
