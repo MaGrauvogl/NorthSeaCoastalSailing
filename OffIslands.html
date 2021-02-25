@@ -11,21 +11,22 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="css/common.css">
          <link rel="stylesheet" href="css/joycoast.css">
+         <link rel="stylesheet" href="css/background.css">
          <script src="js/common.js"></script>
          <script src="js/pic_show.js"></script>
     </head>
     <body onresize="resize_img()" onload="start_img()">
         <header>
-             <a href="javascript:void(0)" onclick="show_menue()"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
+             <a href="javascript:void" onclick="show_menue()"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
             <nav>
                 <ul id="menue_list">
-                    <li class="vis"><a href="Home.html" class="active">Home</a></li>
+                    <li class="vis"><a href="Home.html">Home</a></li>
                     <li class="vis"><a href="TheNorthSea.html">North Sea</a></li>
                     <li class="vis"><a href="vessel.html">Sailing Vessel</a></li>
-                    <li class="vis">Sailing
+                    <li class="vis"><a href="" class="active">Sailing</a>
                     <ul class="sub_container">
                         <li class="sub_item"><a href="OffIslands.html">Off the East Fresian Islands</a></li>
-                        <li class="sub_item"><a href="SummerSpiekeroog.html">Summer on Spiekeroog</a></li>
+                       <!-- <li class="sub_item"><a href="SummerSpiekeroog.html">Summer on Spiekeroog</a></li> -->
                         <li class="sub_item"><a href="JoyCoast.html">Joy on the coast</a></li>
                     </ul></li>
                     <li class="vis"><a href="Links.html">Links</a></li>
@@ -82,7 +83,9 @@ and open the template in the editor.
                 <figcaption class="cap">A marvelous evening in the marina Spiekeroog</figcaption>
             </figure>    
             <img id="close" onclick="close_im()" src="images/Close_Sign.png" alt="Close Sign"/>
+             <p id="clickon">Click in a picture to enlarge it!</p> 
             </div>
+           
         </section>
     </body>
 </html>

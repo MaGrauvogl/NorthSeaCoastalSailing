@@ -27,6 +27,7 @@ function show_img(fig, capt){
     bild.style.transform = "rotate(" + 0 + "deg)";
     bild.style.width = "80%";
     bild.style.zIndex = "4";
+    bild.style.position = "fixed";
     //center the image
     var centr = Math.round((sec.offsetWidth-bild.offsetWidth)/2);
     bild.style.left = centr.toString()+ "px";
@@ -35,12 +36,14 @@ function show_img(fig, capt){
     var p = bild.offsetTop;
     var h = bild.height;
     cap.style.display = "block";
+    cap.style.position = "fixed";
     cap.style.top = (p+h).toString()+"px";
     cap.style.left = centr.toString()+ "px";
     cap.style.width = (bild.offsetWidth).toString()+"px";
     cap.style.zIndex = "4";
     //positioning of the close button
     aus.style.display = "block";
+    aus.style.position = "fixed";
     var aus_breite = aus.offsetWidth;
     var aus_top = p;
     aus.style.top = aus_top.toString()+"px";
@@ -49,6 +52,7 @@ function show_img(fig, capt){
     aus.style.zIndex = "5";
     status = true;
     console.log(status);
+    document.getElementById("clickon").style.display="none";
 }
 
 //To keep everthing on place when the window is resized
@@ -87,5 +91,6 @@ function close_im(){
     cap.style.display = "none";
     aus.style.display = "none";
     status = false;
+    document.getElementById("clickon").style.display="block";
 }
 
