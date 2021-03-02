@@ -37,7 +37,7 @@ p{
     background-color: rgb(255, 250, 240);
     padding: 3% 5%;
 }
-/*Styling the footer*/
+/*Styling footer*/
 footer{
     margin: 10% 0% 0% 0%;
     background-color: rgb(238, 203, 173);
@@ -65,8 +65,13 @@ footer h5{
     width: 40%;
     max-width: 100px;
 }
+#unesco{
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+}
+/*End styling footer*/
 
-/*Styling video*/
+/*Styling video in Home*/
 #sailback{
     display: block;
     width: 30%; /*relates to the value in function videosmall in common.js*/
@@ -88,7 +93,7 @@ footer h5{
     border-style: none;
 }
 
-/*-------------------   Navigation menue   ------------------*/
+/*-------------------  Styling Navigation menue   ------------------*/
 #menue{
     width: 8%;
     max-width: 40px;
@@ -173,7 +178,7 @@ a.active{
 .list_container ul li{
     padding: 1% 2%;
 }
-
+/*------------------- End styling Navigation menue   ------------------*/
 
 /*-------------------------------------------------------------------------------------*/
 @media screen and (min-width: 576px){
@@ -206,7 +211,7 @@ footer{
     margin: 5% 0% 0% 0%;
 }
 
-/* ----------------- Navigation Menue  -------------------- */
+/* ----------------- Styling navigation Menue  -------------------- */
 #menue{
     display: none;
 }
@@ -272,12 +277,14 @@ nav a.active{
     padding: 5% 0%;
     font-size: 0.8em;
 }
-}
+/* ----------------- End styling navigation Menue  -------------------- */
+
 /*Styling the Google Maps iframe*/
 .Maps{
     height: 45vh;
     min-height: 400px;
     
+}
 }
 
 @media screen and (min-width: 992px){

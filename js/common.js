@@ -70,8 +70,8 @@ windowchange(x);
 x.addListener(windowchange);
 
 /* To set the styles when window gets smal
- If the menue was visible before it will be made display:none and the variable do control the
- direction and the dirction itself of the svg-image ist set*/
+ If the menue was visible before it will be made display:none and the variable to control the
+ direction and the direction itself of the svg-image ist set*/
 function windowsmal(y){
     var men = document.getElementById("menue_list");
     var menu = document.getElementById("menue");
@@ -87,11 +87,11 @@ windowchange(y);
 y.addListener(windowsmal); 
 
 //Resize the video
-function videosize(){
-    var w = document.getElementById("sailback");
+function videosize(vi){
+    var w = document.getElementById(vi);
     w.style.width ="80%";
 }
-function videosmall(){
-    var v = document.getElementById("sailback");
+function videosmall(vi){
+    var v = document.getElementById(vi);
     v.style.width = "30%";
 }

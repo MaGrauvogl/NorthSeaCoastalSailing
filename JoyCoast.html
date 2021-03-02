@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Joy on the Coast</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/background.css">
+        <link rel="stylesheet" href="css/joycoast.css">
+        <script src="js/common.js"></script>
+        <script src="js/pic_show.js"></script>
+    </head>
+    <body onresize="resize_img('joycoast', -1)" onload="start_img('joycoast')">
+        <header>
+            <a href="javascript:void(0)" onclick="show_menue()"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
+            <nav>
+                <ul id="menue_list">
+                    <li class="vis"><a href="Home.html" class="active">Home</a></li>
+                    <li class="vis"><a href="TheNorthSea.html">North Sea</a></li>
+                    <li class="vis"><a href="vessel.html">Sailing Vessel</a></li>
+                    <li class="vis">Sailing
+                    <ul class="sub_container">
+                        <li class="sub_item"><a href="OffIslands.html">Off the East Fresian Islands</a></li>
+                       <!-- <li class="sub_item"><a href="SummerSpiekeroog.html">Summer on Spiekeroog</a></li> -->
+                        <li class="sub_item"><a href="JoyCoast.html">Joy on the coast</a></li>
+                    </ul></li>
+                    <li class="vis"><a href="Links.html">Links</a></li>
+                </ul>
+                
+            </nav>      
+        </header>
+        <h1>Have fun with the wind, the salty water and the waves</h1>
+        <p>There are a lot of ways to enjoy the North Sea Coast and the Wadden Sea. On the pictures and videos
+            below youe people paragliding or windsurfing.<br>
+        And many people just like to go for a walk on the coast on a cold stormy winter day.</p>
+        <div id="joycoast">
+            <video id="paragliding" controls preload="metadata" onended="close_im(-1)"
+                   onplay="show_img('paragliding', -1, 'joycoast')">
+                <source src="videos/Joy_Paragliding.mp4" type="video/mp4">
+                Your Browser does not suport the video tag.
+            </video>
+            <video id="windsurfing" controls preload="metadata" onended="close_im(-1)"
+                   onplay="show_img('windsurfing', -1, 'joycoast')">
+                <source src="videos/Joy_windsurfing.mp4" type="video/mp4">
+                Your Browser does not suport the video tag.
+            </video>
+            <video id="walk" controls preload="metadata" onended="close_im(-1)"
+                   onplay="show_img('walk', -1, 'joycoast')">
+                <source src="videos/Joy_walk.mp4" type="video/mp4">
+                Your Browser does not suport the video tag.
+            </video>
+            <figure>
+                <img id="joy_fig1" onclick="show_img('joy_fig1', 0, 'joycoast')" 
+                     src="images/Joy_Paragliding_pic_01b.jpg" alt="Paragliding">
+                <figcaption class="cap">Paragliding on a stormy winter day</figcaption>
+            </figure>
+            <figure>
+                <img id="joy_fig2" onclick="show_img('joy_fig2', 1, 'joycoast')" 
+                     src="images/Joy_Paragliding_pic_02b.jpg" alt="Paragliding">
+                <figcaption class="cap">Paragliding on a stormy winter day</figcaption>
+            </figure>
+             <img id="close" onclick="close_im(1)" src="images/Close_Sign.png" alt="Close Sign"/>
+             <p id="clickon">Click on a picture or a video to enlarge it!</p>
+        </div>
+    </body>
+</html>

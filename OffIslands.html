@@ -4,18 +4,18 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html lang="en">
     <head>
         <title>OffIslands</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="css/common.css">
-         <link rel="stylesheet" href="css/joycoast.css">
+         <link rel="stylesheet" href="css/offisland.css">
          <link rel="stylesheet" href="css/background.css">
          <script src="js/common.js"></script>
          <script src="js/pic_show.js"></script>
     </head>
-    <body onresize="resize_img()" onload="start_img()">
+    <body onresize="resize_img('offisland', 1)" onload="start_img('offisland')">
         <header>
              <a href="javascript:void" onclick="show_menue()"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
             <nav>
@@ -37,52 +37,52 @@ and open the template in the editor.
             <h1>An impression about the sailing off the East Fresian Islands</h1>
             <div id="offisland">
             <figure>
-                <img id="figu1" onclick="show_img('figu1', 0)" 
+                <img id="figu1" onclick="show_img('figu1', 0, 'offisland')" 
                      src="images/Marina_Hooksiel_web.jpg" alt="Marina Hooksiel">
                 <figcaption class="cap">In the Marina Hooksiel before the trip off the Islands</figcaption>
             </figure>
             <figure>
-                <img id="figu2" onclick="show_img('figu2', 1)" 
+                <img id="figu2" onclick="show_img('figu2', 1, 'offisland')" 
                      src="images/Beach_Wangerooge_web.jpg" alt="Beach Wangerooge">
                 <figcaption class="cap">The Beaches of the Island Wangerooge</figcaption>
             </figure>
             <figure>
-                <img id="figu3" onclick="show_img('figu3', 2)" 
+                <img id="figu3" onclick="show_img('figu3', 2, 'offisland')" 
                      src="images/Gas_Tanker_web.jpg" alt="Gas Tanker">
                 <figcaption class="cap">A gas tanker on our way</figcaption>
             </figure>
             <figure>
-                <img id="figu4" onclick="show_img('figu4', 3)" 
+                <img id="figu4" onclick="show_img('figu4', 3, 'offisland')" 
                      src="images/Sea_Lock_Hooksiel_web.jpg" alt="Gas Tanker">
                 <figcaption class="cap">In the sea lock Hooksiel waiting to go out on the
                 North Sea</figcaption>
             </figure>
             <figure>
-                <img id="figu5" onclick="show_img('figu5', 4)" 
+                <img id="figu5" onclick="show_img('figu5', 4, 'offisland')" 
                      src="images/sky_web_1.jpg" alt="Beautiful sky">
                 <figcaption class="cap">Beautiful Sky</figcaption>
             </figure>  
             <figure>
-                <img id="figu6" onclick="show_img('figu6', 5)" 
+                <img id="figu6" onclick="show_img('figu6', 5, 'offisland')" 
                      src="images/pricken.jpg" alt="Pricken">
                 <figcaption class="cap">Blue Sky in the Wadden Sea</figcaption>
             </figure>
             <figure>
-                <img id="figu7" onclick="show_img('figu7', 6)" 
+                <img id="figu7" onclick="show_img('figu7', 6, 'offisland')" 
                      src="images/sun_web_1.jpg" alt="Sun in the sky abouve the North Sea">
                 <figcaption class="cap">Blue Sky in the Wadden Sea</figcaption>
             </figure> 
             <figure>
-                <img id="figu8" onclick="show_img('figu8', 7)" 
+                <img id="figu8" onclick="show_img('figu8', 7, 'offisland')" 
                      src="images/Beach_Bar_Hooksiel_web.jpg" alt="Beach Bar">
                 <figcaption class="cap">The drink after the trip in the beach bar</figcaption>
             </figure>    
             <figure>
-                <img id="figu9" onclick="show_img('figu9', 8)" 
+                <img id="figu9" onclick="show_img('figu9', 8, 'offisland')" 
                      src="images/marina_spiekeroog1.jpg" alt="Marina Spiekeroog">
                 <figcaption class="cap">A marvelous evening in the marina Spiekeroog</figcaption>
             </figure>    
-            <img id="close" onclick="close_im()" src="images/Close_Sign.png" alt="Close Sign"/>
+            <img id="close" onclick="close_im(1)" src="images/Close_Sign.png" alt="Close Sign"/>
              <p id="clickon">Click in a picture to enlarge it!</p> 
             </div>
            

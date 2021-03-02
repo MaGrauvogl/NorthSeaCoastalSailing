@@ -75,15 +75,16 @@ and open the template in the editor.
     margin: 1% 1% 2% 2%;
 }
 
-#foot_link_one{
+#foot_snappy{
     width: 20%;
     max-width: 80px;
 }
-#foot_link_two{
+#foot_sailboatdata{
     width: 40%;
     max-width: 150px;
     vertical-align: 300%;
 }
+/*End styling the footer for the page "Sailing Vessel"*/
 
 @media screen and (min-width: 576px){
 .col{
