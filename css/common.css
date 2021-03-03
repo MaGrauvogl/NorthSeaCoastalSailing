@@ -149,6 +149,7 @@ footer h5{
     display: block;
     z-index: 4;
 }
+
 .sub_item{
     display: block;
     width: 100%;
@@ -265,11 +266,11 @@ nav a.active{
     padding-left: 1%;
     padding-right: 1%;
 }
-
+/*
 .vis:hover ul{
     display: block;
     z-index: 4;
-}
+}*/
 .sub_item{
     display: block;
     width: 98%;

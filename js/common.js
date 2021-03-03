@@ -49,8 +49,7 @@ function show_menue(){
             if (r<5){
                 men.style.display = "none";
             }
-       }
-       
+       }    
     }
     vis = false;
     }
@@ -86,6 +85,7 @@ var y = window.matchMedia("(max-width: 576px)");
 windowchange(y);
 y.addListener(windowsmal); 
 
+//----------------------------------------------------------------------------------------------
 //Resize the video
 function videosize(vi){
     var w = document.getElementById(vi);
@@ -95,3 +95,17 @@ function videosmall(vi){
     var v = document.getElementById(vi);
     v.style.width = "30%";
 }
+//------------------------------------------------------------------------------------------------
+//to show the submenue in the navigation bar when it is on focus
+//neccesary for accessability when working only with the ceyboard
+function show_sub(ac){
+    var te = document.getElementsByClassName(ac);
+    te[0].style.display = "block";
+    te[0].style.zIndex = "4";
+}
+function hide_sub(ac){
+    var te = document.getElementsByClassName(ac);
+    te[0].style = "sub_container";
+}
+//end show submenue
+//----------------------------------------------------------------------------------------------
