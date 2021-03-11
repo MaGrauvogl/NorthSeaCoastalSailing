@@ -12,18 +12,22 @@ function start_img(t){
 }
 
 var bild;
+var bild_alt;
 var cap;
 var aus;
 var sec;
+var bild_style; //the style of the small picture is saved
 var status = false;
+var capt_old = -1;
 //capt is the number of the caption in the array cap to be used 
 //if no caption is there a number < 0 is used
 function show_img(fig, capt, bo){
-    console.log(fig);
+    if (status === "true"){
+        close_im(capt_old);
+    }
     bild = document.getElementById(fig);
-    console.log(bild);
+    bild_style = bild.style;
     aus = document.getElementById("close");
-    console.log(aus);
     sec = document.getElementById(bo);
     //styling of the large image
     bild.style.transform = "rotate(" + 0 + "deg)";
@@ -54,16 +58,19 @@ function show_img(fig, capt, bo){
     var aus_left = bild.offsetLeft - aus_breite + bild.offsetWidth;
     aus.style.left = aus_left.toString()+"px";
     aus.style.zIndex = "5";
+    aus.focus();
     status = true;
+    capt_old = capt;
+    bild_alt = bild;
     document.getElementById("clickon").style.display="none";
 }
 
 //To keep everthing on place when the window is resized
+// capt < 0: no figure caption is there
 function resize_img(resimg, capt){
     //to keep pictures on place
     var w = document.getElementById(resimg);
     var h= stretch*w.offsetWidth;
-    console.log(h);
     w.style.height = h.toString()+"px";
     //to keep the large picture in place
     if (status === "true"){
@@ -93,12 +100,11 @@ function resize_img(resimg, capt){
 }
 
 function close_im(capt){
-    bild.style = "#figu1";
+    bild.style = bild_style;
     if (capt > -1){
         cap.style.display = "none";
     }
     aus.style.display = "none";
-    console.log(aus.style.display);
     status = false;
     document.getElementById("clickon").style.display="block";
 }

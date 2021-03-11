@@ -37,7 +37,7 @@ p{
     background-color: rgb(255, 250, 240);
     padding: 3% 5%;
 }
-/*Styling footer*/
+/*Styling footer Home*/
 footer{
     margin: 10% 0% 0% 0%;
     background-color: rgb(238, 203, 173);
@@ -69,7 +69,7 @@ footer h5{
     width: 80%;
     margin: 0% 10% 0% 10%;
 }
-/*End styling footer*/
+/*End styling footer Home*/
 
 /*Styling video in Home*/
 #sailback{
@@ -189,11 +189,17 @@ p{
     background-color: rgba(255, 250, 240,  0.7);
     padding: 2% 3%;
 }
+
+/*The Links in the aside*/
 .asi_north{
     display: inline-block;
     width: 98%;
     margin-bottom: 5%;
     vertical-align: top;
+}
+.north_link{
+    display: block;
+    padding: 1% 1% 1% 1%;
 }
 .link_container, .book_container{
     display: inline-block;
@@ -201,11 +207,7 @@ p{
     margin: 0% 2%;
     vertical-align: top;
 }
-/*The Links in the aside*/
-.north_link{
-    display: block;
-    padding: 1% 1% 1% 1%;
-}
+
 /*Styling the footer*/
 footer{
     font-size: 1em;
@@ -266,11 +268,7 @@ nav a.active{
     padding-left: 1%;
     padding-right: 1%;
 }
-/*
-.vis:hover ul{
-    display: block;
-    z-index: 4;
-}*/
+
 .sub_item{
     display: block;
     width: 98%;
@@ -310,7 +308,7 @@ p{
 .asi_north{
     display: inline-block;
     width: 20%;
-    margin-bottom: 30%;
+    float: right;
 }
 .aside_head{
     text-align: center;
@@ -329,11 +327,7 @@ p{
     font-size: 0.8em;
 }
 
-.asi_north{
-    display: inline-block;
-    width: 20%;
-    float: right;
-}
+
 .link_container, .book_container{
     display: block;
     clear: both;
@@ -351,8 +345,4 @@ body{
     font-size: 1.2em;
     width: 85%;
 }
-.asi_north{
-    margin-right: 5%;
-}
-
 }

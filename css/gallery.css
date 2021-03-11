@@ -24,36 +24,44 @@ and open the template in the editor.
 .slides h3{
     text-align: center;
     padding-top: 2%;
+    width: 75%;
+    margin: 0% auto;
 }
-
+/*image in the gallery*/
 .imggallery{
     display: block;
     width: 75%;
     margin: 1% auto;
 }
-
+/*text in the gallery*/
 .txtgallery{
     display: block;
     vertical-align: top;
-    width: 75%;
+    width: 70%;
     margin: 1% auto;
+    padding: 0% 2%;
     font-size: 1em;
 }
 
 #forward{ 
     position: absolute;
     width: 12%;
-    height: 80%;
-    bottom: 10%;
+    height: 98%;
+    bottom: 1%;
     right: 0;
-    
 }
+
 #backward{
     position: absolute;
     width: 12%;
-    height: 80%;
-    bottom: 10%;
+    height: 98%;
+    bottom: 1%;
     left: 0;
+}
+#forward:focus, #backward:focus{
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(0, 255, 0);
 }
 
 #smallpics{
@@ -89,19 +97,11 @@ and open the template in the editor.
 }
 
 #forward{ 
-    position: absolute;
     width: 8%;
-    height: 80%;
-    bottom: 2%;
-    right: 0;
     
 }
 #backward{
-    position: absolute;
     width: 8%;
-    height: 80%;
-    bottom: 2%;
-    left: 0;
 }
 
 #smallpics{
@@ -124,6 +124,11 @@ and open the template in the editor.
     margin: auto;
     padding-left: 3%;
     padding-top: 1%;
+}
+.smal:focus{
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(0, 255, 0);
 }
 
 

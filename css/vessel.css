@@ -16,6 +16,8 @@ and open the template in the editor.
 .keel{
     display: inline-block;
     width: 48%;
+    margin: 0;
+    padding: 2% 0%;
     
 }
 .keel_img{
@@ -71,18 +73,19 @@ and open the template in the editor.
     margin: 2% auto;
 }
 /*Styling the footer for the page "Sailing Vessel"*/
-.foot_link{
-    margin: 1% 1% 2% 2%;
+.foot_ref{
+    display: inline-block;
+    width: 25%;
+    margin: 0 3%;
 }
-
-#foot_snappy{
-    width: 20%;
-    max-width: 80px;
+.foot_img{
+    width: 100%;
+    max-width: 100px;
+    vertical-align: middle;
 }
-#foot_sailboatdata{
-    width: 40%;
-    max-width: 150px;
-    vertical-align: 300%;
+.fab{
+    vertical-align: middle;
+    color: rgb(0, 191, 255);
 }
 /*End styling the footer for the page "Sailing Vessel"*/
 

@@ -12,13 +12,14 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/vessel.css">
         <script src="js/common.js"></script>
+        <script src="https://kit.fontawesome.com/e313ddb18b.js" crossorigin="anonymous"></script>
     </head>
     <body>
        <header>
             <a href="javascript:void(0)" onclick="show_menue()"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
             <nav>
                 <ul id="menue_list">
-                    <li class="vis"><a href="Home.html">Home</a></li>
+                    <li class="vis"><a href="index.html">Home</a></li>
                     <li class="vis"><a href="TheNorthSea.html">North Sea</a></li>
                     <li class="vis"><a href="vessel.html" class="active">Sailing Vessel</a></li>
                     <li class="vis" ><a href="javascript:void(0)" onfocus="show_sub('sub_container')">Sailing</a>
@@ -44,24 +45,25 @@ and open the template in the editor.
                 The keel type determines the draft of the boat.
             </p>
             <div class="col">
-                <div class="keel">
-                        <img class="keel_img" src="images/full_keel.png" alt="Full keel">
-                        <h5 class="keel_caption">Full Keel</h5>
-                </div>
-                <div class="keel">
+                <figure class="keel">
+                    <img class="keel_img" src="images/full_keel.png" alt="Full keel">
+                    <figcaption class="keel_caption">Full Keel</figcaption>
+                </figure>
+                
+                <figure class="keel">
                         <img class="keel_img" src="images/fin_keel.png" alt="Fin keel">
-                        <h5 class="keel_caption">Fin Keel</h5>
-                </div>
+                        <figcaption class="keel_caption">Fin Keel</figcaption>
+                </figure>
             </div>
             <div class="col">
-                <div class="keel">
+                <figure class="keel">
                         <img class="keel_img" src="images/bilge_keel.png" alt="Bilge keel">
-                        <h5 class="keel_caption">Bilge Keel</h5>
-                </div>
-                <div class="keel">
+                        <figcaption class="keel_caption">Bilge Keel</figcaption>
+                </figure>
+                <figure class="keel">
                         <img class="keel_img" src="images/daggerboard.png" alt="Daggerboard">
-                        <h5 class="keel_caption">Daggerboard</h5>
-                </div>
+                        <figcaption class="keel_caption">Daggerboard</figcaption>
+                </figure>
             </div>
             <p id="aside">
                 The most appropriate keel typs for the North Sea Coastal Region and the Wadden Sea
@@ -87,11 +89,14 @@ and open the template in the editor.
         </section>
         <footer>
             <h5>Some interesting links:</h5>
-            <a class="foot_link" href="https://www.snapdragonmirage.org.uk/" target="blank">
-                <img id="foot_snappy" src="images/icon_snapdragon.png" alt="Snapdragon Mirage and Invaders Associaton">
+            <a class="foot_ref" href="https://www.snapdragonmirage.org.uk/" target="blank" >
+                <img class="foot_img" src="images/icon_snapdragon.png" alt="Snapdragon Mirage and Invaders Associaton">
             </a>
-            <a class="foot_link" href="https://sailboatdata.com/sailboat/snapdragon-29" target="blank">
-                <img id="foot_sailboatdata" src="images/sailboatdata.png" alt="Sailboat Data">
+            <a class="foot_ref" href="https://sailboatdata.com/sailboat/snapdragon-29" target="blank">
+                <img class="foot_img" src="images/sailboatdata.png" alt="Sailboat Data">
+            </a>
+            <a href="https://www.facebook.com/groups/SMAsiteminder/" class="foot_ref" target="blank">
+                <img class="foot_img" src="images/facebook.png" alt="Facebook">
             </a>
         </footer>
     </body>
