@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Marine Traffic</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/traffic.css">
+        <script src="js/common.js"></script>
+    </head>
+    <body>
+        <header>
+             <a href="javascript:void(0)" onclick="show_menue()"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
+            <nav>
+                <ul id="menue_list">
+                    <li class="vis"><a href="index.html" class="active">Home</a></li>
+                    <li class="vis"><a href="TheNorthSea.html">North Sea</a></li>
+                    <li class="vis"><a href="vessel.html">Sailing Vessel</a></li>
+                   <li class="vis" ><a href="javascript:void(0)" onfocus="show_sub('sub_container')">Sailing</a>
+                    <ul class="sub_container">
+                        <li class="sub_item"><a href="OffIslands.html">Off the East Fresian Islands</a></li>
+                        <li class="sub_item"><a href="JoyCoast.html" onblur="hide_sub('sub_container')">Joy on the coast</a></li>
+                    </ul></li>
+                    <li class="vis"><a href="traffic.html">Marine Traffic</a></li>
+                </ul>               
+            </nav>    
+        </header>
+        <section>
+            <h1>Marine Traffic</h1>
+            <p>The North Sea is the world most busiest area for ship traffic. So it is possible that small ships
+            meet huge container ships. To give you an impression of the ship traffic in the North Sea you can look
+            at the Marine Traffic map below. For ships equiped with an <i>Automatic Identification System (AIS)</i> 
+            you can see information about the ships and sometimes even a picture of the ship when you click on the
+            ship symbol</p>
+            <div id="traffic_map">
+                <script type="text/javascript">
+                width='100%';		// the width of the embedded map in pixels or percentage
+                height='100%';		// the height of the embedded map in pixels or percentage
+                border='1';		// the width of the border around the map (zero means no border)
+                shownames='false';	// to display ship names on the map (true or false)
+                latitude='55.55';	// the latitude of the center of the map, in decimal degrees
+                longitude='3.0';	// the longitude of the center of the map, in decimal degrees
+                zoom='5';		// the zoom level of the map (values between 2 and 17)
+                maptype='1';		// use 0 for Normal Map, 1 for Satellite
+                trackvessel='0';	// MMSI of a vessel (note: vessel will be displayed only if within range of the system) - overrides "zoom" option
+                fleet='';		// the registered email address of a user-defined fleet (user's default fleet is used)
+                </script>
+                <script type="text/javascript" src="//www.marinetraffic.com/js/embed.js"></script>
+            </div>
+        </section>
+    </body>
+</html>

@@ -36,6 +36,8 @@ p{
     font-size: 1.0em;
     background-color: rgb(255, 250, 240);
     padding: 3% 5%;
+    max-width: 1200px;
+    margin: 0% auto;
 }
 /*Styling footer Home*/
 footer{
