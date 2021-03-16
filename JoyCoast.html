@@ -33,38 +33,40 @@ and open the template in the editor.
                 
             </nav>      
         </header>
+        <section>
         <h1>Have fun with the wind, the salty water and the waves</h1>
         <p>There are a lot of ways to enjoy the North Sea Coast and the Wadden Sea. On the pictures and videos
             below youe people paragliding or windsurfing.<br>
         And many people just like to go for a walk on the coast on a cold stormy winter day.</p>
         <div id="joycoast">
-            <video id="paragliding" controls preload="metadata" onended="close_im(-1)"
-                   onplay="show_img('paragliding', -1, 'joycoast')">
+            <video id="paragliding" controls onended="close_im()" onclick="show_img('paragliding', -1, 'joycoast')" onkeypress="show_img('paragliding', -1, 'joycoast')"
+                   onplay="show_img('paragliding', -1, 'joycoast')" onpause="close_im()" tabindex="0">
                 <source src="videos/Joy_Paragliding.mp4" type="video/mp4">
                 Your Browser does not suport the video tag.
             </video>
-            <video id="windsurfing" controls preload="metadata" onended="close_im(-1)"
-                   onplay="show_img('windsurfing', -1, 'joycoast')">
+            <video id="windsurfing" controls onended="close_im()" onclick="show_img('windsurfing', -1, 'joycoast')" onkeypress="show_img('windsurfing', -1, 'joycoast')"
+                   onplay="show_img('windsurfing', -1, 'joycoast')" onpause="close_im()" tabindex="0">
                 <source src="videos/Joy_windsurfing.mp4" type="video/mp4">
                 Your Browser does not suport the video tag.
             </video>
-            <video id="walk" controls preload="metadata" onended="close_im(-1)"
-                   onplay="show_img('walk', -1, 'joycoast')">
+            <video id="walk" controls onended="close_im()" onclick="show_img('walk', -1, 'joycoast')" onkeypress="show_img('walk', -1, 'joycoast')"
+                   onplay="show_img('walk', -1, 'joycoast')" onpause="close_im()" tabindex="0">
                 <source src="videos/Joy_walk.mp4" type="video/mp4">
                 Your Browser does not suport the video tag.
             </video>
             <figure>
-                <img id="joy_fig1" onclick="show_img('joy_fig1', 0, 'joycoast')" 
-                     src="images/Joy_Paragliding_pic_01b.jpg" alt="Paragliding">
+                <img id="joy_fig1" onclick="show_img('joy_fig1', 0, 'joycoast')" onkeypress="show_img('joy_fig1', 0, 'joycoast')"
+                     src="images/Joy_Paragliding_pic_01b.jpg" alt="Paragliding" tabindex="0">
                 <figcaption class="cap">Paragliding on a stormy winter day</figcaption>
             </figure>
             <figure>
-                <img id="joy_fig2" onclick="show_img('joy_fig2', 1, 'joycoast')" 
-                     src="images/Joy_Paragliding_pic_02b.jpg" alt="Paragliding">
+                <img id="joy_fig2" onclick="show_img('joy_fig2', 1, 'joycoast')" onkeypress="show_img('joy_fig2', 1, 'joycoast')"
+                     src="images/Joy_Paragliding_pic_02b.jpg" alt="Paragliding" tabindex="0">
                 <figcaption class="cap">Paragliding on a stormy winter day</figcaption>
             </figure>
-             <img id="close" onclick="close_im(1)" src="images/Close_Sign.png" alt="Close Sign"/>
+            <img id="close" onclick="close_im()" onkeypress="close_im()" onblur="close_im()" src="images/Close_Sign.png" alt="Close Sign" tabindex="0"/>
              <p id="clickon">Click on a picture or a video to enlarge it!</p>
         </div>
+        </section>
     </body>
 </html>

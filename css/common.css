@@ -67,6 +67,11 @@ footer h5{
     width: 40%;
     max-width: 100px;
 }
+#wap:focus > #Wappen{
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(50, 205, 50);
+}
 #unesco{
     width: 80%;
     margin: 0% 10% 0% 10%;
@@ -82,6 +87,11 @@ footer h5{
     margin: 4% auto;
     transition-property: width; /*is iniciated in the commen.js*/
     transition-duration: 2s;
+}
+#sailback:focus{
+    border-style: solid;
+    border-width: medium;
+    border-color: rgb(50, 205, 50);
 }
 
 /*Styling the Google Maps iframe*/
@@ -133,6 +143,9 @@ footer h5{
     border-bottom-right-radius: 10px;
     padding-bottom: 10%;
 } 
+.vis a:focus{
+    color: #FFC175;
+}
 
 .sub_container{
     position: absolute;
@@ -142,7 +155,7 @@ footer h5{
     display: none;
     margin: 1% 0%;
     border-radius: 5px;
-    background-color: rgb(0, 205, 0);
+    background-color: #24249E;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -236,10 +249,9 @@ footer{
     width: 18%;
     display: inline-block;
     padding: 2% 0%;
-    background-color: rgb(25, 25, 112);
     border-radius: 20px;
     color: rgb(255, 255, 255);
-    font-size: 0.9em;
+    font-size: 0.95em;
 }
 
 .vis:first-child{
@@ -265,7 +277,6 @@ nav a.active{
     left:60%;
     display: none;
     margin: 1% 0%;
-    background-color: rgb(0, 205, 0);
     border-radius: 5px;
     padding-left: 1%;
     padding-right: 1%;

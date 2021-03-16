@@ -16,18 +16,18 @@ and open the template in the editor.
     </head>
     <body onload="start()" onresize="start()">
         <header>
-            <a onkeypress="show_menue()" onclick="show_menue()" tabindex="1"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
+            <a onkeypress="show_menue()" onclick="show_menue()" tabindex="0"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
             <nav>
                 <ul id="menue_list">
-                    <li class="vis"><a href="index.html" tabindex="2">Home</a></li>
-                    <li class="vis"><a href="TheNorthSea.html" class="active" tabindex="3">North Sea</a></li>
-                    <li class="vis"><a href="vessel.html" tabindex="4">Sailing Vessel</a></li>
-                    <li class="vis" ><a href="javascript:void(0)" onfocus="show_sub('sub_container')" tabindex="5">Sailing</a>
+                    <li class="vis"><a href="index.html">Home</a></li>
+                    <li class="vis"><a href="TheNorthSea.html" class="active">North Sea</a></li>
+                    <li class="vis"><a href="vessel.html">Sailing Vessel</a></li>
+                    <li class="vis" ><a href="javascript:void(0)" onfocus="show_sub('sub_container')">Sailing</a>
                     <ul class="sub_container">
-                        <li class="sub_item"><a href="OffIslands.html" tabindex="6">Off the East Fresian Islands</a></li>
-                        <li class="sub_item"><a href="JoyCoast.html" onblur="hide_sub('sub_container')" tabindex="7">Joy on the coast</a></li>
+                        <li class="sub_item"><a href="OffIslands.html">Off the East Fresian Islands</a></li>
+                        <li class="sub_item"><a href="JoyCoast.html" onblur="hide_sub('sub_container')">Joy on the coast</a></li>
                     </ul></li>
-                    <li class="vis"><a href="traffic.html" tabindex="8">Marine Traffic</a></li>
+                    <li class="vis"><a href="traffic.html">Marine Traffic</a></li>
                 </ul>
                 
             </nav>      
@@ -82,15 +82,15 @@ and open the template in the editor.
                 walk on the ground of the Sea. With a local guide you can even walk to the island only a few miles 
                 off the coast.</p>
                 </div>
-                <img id="backward" src="images/Backward_02.png" alt="B" onclick="push(-1)" onkeypress="push(-1)" tabindex="9">
-                <img id="forward" src="images/Forward_02.png" alt="F" onclick="push(1)" tabindex="10">           
+                <img id="backward" src="images/Backward_02.png" alt="B" onclick="push(-1)" onkeypress="push(-1)" tabindex="0">
+                <img id="forward" src="images/Forward_02.png" alt="F" onclick="push(1)" onkeypress="push(1)" tabindex="0">           
             </div>
             <div id="smallpics">
-                <img src="images/NorthSea_NASA.jpeg" class="smal" alt="North Sea NASA" onclick="showdirect(1)" onkeypress="showdirect(1)" tabindex="11">
-                <img src="images/NorthSeaCurrent01b.jpg" class="smal" alt="North Sea Current" onclick="showdirect(2)" onkeypress="showdirect(2)" tabindex="12">
-                <img src="images/Sandbank_01c.jpg" class="smal" alt="Sandbanks" onclick="showdirect(3)" onkeypress="showdirect(3)" tabindex="13">
-                <img src="images/WaddenSea01.jpeg" class="smal" alt="Map of Wadden Sea" onclick="showdirect(4)" onkeypress="showdirect(4)" tabindex="14">
-                <img src="images/WaddenSea02.jpeg" class="smal" alt="Walking in the Wadden Sea" onclick="showdirect(5)" onkeypress="showdirect(5)" tabindex="15">
+                <img src="images/NorthSea_NASA.jpeg" class="smal" alt="North Sea NASA" onclick="showdirect(1)" onkeypress="showdirect(1)" tabindex="0">
+                <img src="images/NorthSeaCurrent01b.jpg" class="smal" alt="North Sea Current" onclick="showdirect(2)" onkeypress="showdirect(2)" tabindex="0">
+                <img src="images/Sandbank_01c.jpg" class="smal" alt="Sandbanks" onclick="showdirect(3)" onkeypress="showdirect(3)" tabindex="0">
+                <img src="images/WaddenSea01.jpeg" class="smal" alt="Map of Wadden Sea" onclick="showdirect(4)" onkeypress="showdirect(4)" tabindex="0">
+                <img src="images/WaddenSea02.jpeg" class="smal" alt="Walking in the Wadden Sea" onclick="showdirect(5)" onkeypress="showdirect(5)" tabindex="0">
             </div>
             
             <h3>If you like to know exactly where the North Sea is located have look on Google Maps</h3>

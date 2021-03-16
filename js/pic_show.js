@@ -16,15 +16,12 @@ var bild_alt;
 var cap;
 var aus;
 var sec;
+var isvideo;
 var bild_style; //the style of the small picture is saved
-var status = false;
-var capt_old = -1;
 //capt is the number of the caption in the array cap to be used 
-//if no caption is there a number < 0 is used
+//if no caption is there for a video a number < 0 is used
 function show_img(fig, capt, bo){
-    if (status === "true"){
-        close_im(capt_old);
-    }
+    isvideo=capt;
     bild = document.getElementById(fig);
     bild_style = bild.style;
     aus = document.getElementById("close");
@@ -49,20 +46,19 @@ function show_img(fig, capt, bo){
         cap.style.left = centr.toString()+ "px";
         cap.style.width = (bild.offsetWidth).toString()+"px";
         cap.style.zIndex = "4";
+        //positioning of the close button
+    
+        aus.style.display = "block";
+        var aus_breite = aus.offsetWidth;
+        var aus_top = p;
+        aus.style.top = aus_top.toString()+"px";
+        var aus_left = bild.offsetLeft - aus_breite + bild.offsetWidth;
+        aus.style.left = aus_left.toString()+"px";
+        aus.style.zIndex = "5";
+        aus.focus();
     }
-    //positioning of the close button
-    aus.style.display = "block";
-    var aus_breite = aus.offsetWidth;
-    var aus_top = p;
-    aus.style.top = aus_top.toString()+"px";
-    var aus_left = bild.offsetLeft - aus_breite + bild.offsetWidth;
-    aus.style.left = aus_left.toString()+"px";
-    aus.style.zIndex = "5";
-    aus.focus();
-    status = true;
-    capt_old = capt;
-    bild_alt = bild;
     document.getElementById("clickon").style.display="none";
+    if (capt < 0) bild.play();
 }
 
 //To keep everthing on place when the window is resized
@@ -99,13 +95,10 @@ function resize_img(resimg, capt){
     }
 }
 
-function close_im(capt){
-    bild.style = bild_style;
-    if (capt > -1){
-        cap.style.display = "none";
-    }
+function close_im(){
     aus.style.display = "none";
-    status = false;
+    if (isvideo > -1) cap.style.display = "none";
+    bild.style = bild_style;
     document.getElementById("clickon").style.display="block";
 }
 
