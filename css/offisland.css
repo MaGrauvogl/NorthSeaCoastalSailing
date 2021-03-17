@@ -32,6 +32,9 @@ and open the template in the editor.
     left: 10%;
     top: 1%;
     transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
 }
 
 #figu2{
@@ -41,6 +44,9 @@ and open the template in the editor.
     left: 40%;
     top: 1%;
     transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
 }
 
 #figu3{
@@ -50,6 +56,9 @@ and open the template in the editor.
     left: 68%;
     top: 1%;
     transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
 }
 #figu4{
     position: absolute;
@@ -58,6 +67,9 @@ and open the template in the editor.
     left: 40%;
     top: 13%;
     transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
 }
 #figu5{
     position: absolute;
@@ -66,6 +78,9 @@ and open the template in the editor.
     left: 10%;
     top: 13%;
     transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
 }
 #figu6{
     position: absolute;
@@ -74,6 +89,9 @@ and open the template in the editor.
     left: 68%;
     top: 20%;
     transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
 }
 #figu7{
     position: absolute;
@@ -82,6 +100,9 @@ and open the template in the editor.
     left: 5%;
     top: 36%;
     transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
 }
 #figu8{
     position: absolute;
@@ -97,6 +118,15 @@ and open the template in the editor.
     left: 69%;
     top: 36%;
     transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+}
+#figu1:focus, #figu2:focus, #figu3:focus, #figu4:focus, #figu5:focus, 
+#figu6:focus, #figu7:focus, #figu8:focus, #figu9:focus{
+    border-style: solid;
+    border-width: medium;
+    border-color: #FFC175;
 }
 .cap{
     display: none;
@@ -112,4 +142,5 @@ and open the template in the editor.
     width: 80%;
     left: 10%;
 }
+
 

@@ -29,6 +29,9 @@ and open the template in the editor.
     left: 5%;
     top: 5%;
     transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
 }
 #windsurfing{
     position: absolute;
@@ -37,6 +40,9 @@ and open the template in the editor.
     left: 60%;
     top: 10%;
     transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
 }
 #walk{
     position: absolute;
@@ -45,6 +51,9 @@ and open the template in the editor.
     left: 25%;
     top: 18%;
     transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
 }
 #joy_fig1{
     position: absolute;
@@ -53,6 +62,9 @@ and open the template in the editor.
     left: 50%;
     top: 30%;
     transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
 }
 #joy_fig2{
     position: absolute;
@@ -61,7 +73,16 @@ and open the template in the editor.
     left: 3%;
     top: 35%;
     transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
 }
+#paragliding:focus, #windsurfing:focus, #walk:focus, #joy_fig1:focus, #joy_fig2:focus{
+    border-style: solid;
+    border-width: medium;
+    border-color: #FFC175;
+}
+
 .cap{
     display: none;
     position: absolute;
