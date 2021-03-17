@@ -35,7 +35,6 @@ function show_img(fig, capt, bo){
     bild.style.zIndex = "4";
     //center the image
     var centr = Math.round((sec.offsetWidth-bild.offsetWidth)/2);
-    console.log(sec.offsetWidth, bild.offsetWidth);
     bild.style.left = centr.toString()+ "px";
     bild.style.top = "-1%"; 
     //positioning of the figcaption
@@ -60,7 +59,7 @@ function show_img(fig, capt, bo){
         aus.style.zIndex = "5";
         aus.focus();
     }
-    satus = true;
+    status = true;
     document.getElementById("clickon").style.display="none";
     if (capt < 0) bild.play();
 }
@@ -73,7 +72,7 @@ function resize_img(resimg){
     var h= stretch*w.offsetWidth;
     w.style.height = h.toString()+"px";
     //to keep the large picture in place
-    if (status){
+    if (status === "true"){
         //center the image
         var centr = Math.round((sec.offsetWidth-bild.offsetWidth)/2);
         bild.style.left = centr.toString()+ "px";
@@ -103,6 +102,6 @@ function close_im(){
     if (isvideo > -1) cap.style.display = "none";
     bild.style = bild_style;
     document.getElementById("clickon").style.display="block";
-    satus = false;
+    status = false;
 }
 

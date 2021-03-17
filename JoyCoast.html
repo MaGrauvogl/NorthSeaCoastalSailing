@@ -20,10 +20,10 @@ and open the template in the editor.
             <a href="javascript:void(0)" onclick="show_menue()"><img id="menue" src="images/Menu_svg_forw.svg" alt="Forward Button"></a>
             <nav>
                 <ul id="menue_list">
-                    <li class="vis"><a href="index.html" class="active">Home</a></li>
+                    <li class="vis"><a href="index.html">Home</a></li>
                     <li class="vis"><a href="TheNorthSea.html">North Sea</a></li>
                     <li class="vis"><a href="vessel.html">Sailing Vessel</a></li>
-                    <li class="vis" ><a href="javascript:void(0)" onfocus="show_sub('sub_container')">Sailing</a>
+                    <li class="vis" ><a href="javascript:void(0)" class="active" onfocus="show_sub('sub_container')">Sailing</a>
                     <ul class="sub_container">
                         <li class="sub_item"><a href="OffIslands.html">Off the East Fresian Islands</a></li>
                         <li class="sub_item"><a href="JoyCoast.html" onblur="hide_sub('sub_container')">Joy on the coast</a></li>
@@ -38,6 +38,7 @@ and open the template in the editor.
         <p>There are a lot of ways to enjoy the North Sea Coast and the Wadden Sea. On the pictures and videos
             below youe people paragliding or windsurfing.<br>
         And many people just like to go for a walk on the coast on a cold stormy winter day.</p>
+         <p id="clickon">Click on a picture or a video on the pin board to enlarge it!</p>
         <div id="joycoast">
             <video id="paragliding" controls onended="close_im()" onclick="show_img('paragliding', -1, 'joycoast')" onkeypress="show_img('paragliding', -1, 'joycoast')"
                    onplay="show_img('paragliding', -1, 'joycoast')" onpause="close_im()" tabindex="0">
@@ -65,7 +66,7 @@ and open the template in the editor.
                 <figcaption class="cap">Paragliding on a stormy winter day</figcaption>
             </figure>
             <img id="close" onclick="close_im()" onkeypress="close_im()" onblur="close_im()" src="images/Close_Sign.png" alt="Close Sign" tabindex="0"/>
-             <p id="clickon">Click on a picture or a video to enlarge it!</p>
+            
         </div>
         </section>
     </body>
